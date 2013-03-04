@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Principal
+    {
+        public string nombre;
+        public string telefono;
+        public string direccion;
+        public string facebook;
+        public Principal()
+        {
+
+
+
+
+        }
+
+        public void imprimenombre()
+        {
+            Console.WriteLine("ingrese Nombre");
+
+        }
+        public void imprimetelefono()
+        {
+            Console.WriteLine("ingrese Telefono");
+
+        }
+        public void imprimedireccion()
+        {
+            Console.WriteLine("ingrese  Direccion");
+
+        }
+        public void imprimefacebook()
+        {
+            Console.WriteLine("ingrese Facebook");
+
+        }
+        static void Main(string[] args)
+        {
+            Principal persona = new Principal();
+
+            persona.imprimenombre();
+            persona.nombre = Console.ReadLine();
+
+            persona.imprimetelefono();
+            persona.telefono = Console.ReadLine();
+
+            persona.imprimedireccion();
+            persona.direccion = Console.ReadLine();
+
+            persona.imprimefacebook();
+            persona.facebook = Console.ReadLine();
+            
+            
+            Console.Clear();
+            Console.WriteLine("FACEBOOK: " + persona.facebook);
+            Console.WriteLine("NOMBRE: " + persona.nombre);
+            Console.WriteLine("TELEFONO: " + persona.telefono);
+            Console.WriteLine("DOMICILIO: " + persona.direccion);
+
+
+            Console.ReadLine();
+
+
+
+
+
+
+        }
+    }
+}
